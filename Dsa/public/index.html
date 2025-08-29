@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Instructor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <i class="fas fa-laptop-code"></i>
+                <h1>DSA Instructor</h1>
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </header>
+        
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <div class="avatar">🤖</div>
+                    <div class="content">
+                        <div class="sender">DSA Instructor</div>
+                        <div class="text">
+                            Ugh, another student who can't be bothered to read the documentation. 
+                            Fine, I'll help you with DSA, but don't waste my time with anything else. 
+                            What do you want to know?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-container">
+                <div class="typing-indicator" id="typingIndicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="input-wrapper">
+                    <textarea 
+                        id="userInput" 
+                        placeholder="Ask me anything about Data Structures and Algorithms..."
+                        rows="1"
+                    ></textarea>
+                    <button id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="suggestions">
+                    <span>Try asking:</span>
+                    <button class="suggestion-btn">Explain binary search</button>
+                    <button class="suggestion-btn">Show me a graph implementation</button>
+                    <button class="suggestion-btn">What's the time complexity of quicksort?</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
